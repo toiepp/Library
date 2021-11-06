@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuratuib DTD//EN"
+        "http://www.hibernate.org/xsd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <!-- INFO Create session of connection to DB -->
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/librarydb</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">mikholskiy</property>
+        <property name="connection.password">spflmk7q</property>
+
+        <!-- INFO Сессия будет привязана к потоку, в котором она создана -->
+        <property name="current_session_context_class">thread</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="show_sql">true</property>
+    </session-factory>
+</hibernate-configuration>

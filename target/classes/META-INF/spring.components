@@ -1,0 +1,5 @@
+org.mikholskiy.config.AppConfig=org.springframework.stereotype.Component
+org.mikholskiy.controllers.MainController=org.springframework.stereotype.Component
+org.mikholskiy.models.Book=javax.persistence.Entity,javax.persistence.Table
+org.mikholskiy.models.BookCategory=javax.persistence.Entity,javax.persistence.Table
+org.mikholskiy.models.Client=javax.persistence.Entity,javax.persistence.Table
