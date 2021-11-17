@@ -17,10 +17,10 @@ CREATE TABLE books
 	title            varchar(50) NOT NULL,
 	author           varchar(50) NOT NULL,
 	publication_date DATE        NOT NULL
-		CONSTRAINT max_publication_date CHECK ( publication_date < NOW() ),
-	publication      int         NOT NULL DEFAULT 1
+		CONSTRAINT max_publication_date CHECK ( publication_date <= NOW() ) DEFAULT NOW(),
+	publication      int         NOT NULL                                   DEFAULT 1
 		CONSTRAINT positive_publications_only CHECK ( publication >= 1 ),
-	age_restriction  int         NOT NULL DEFAULT 0
+	age_restriction  int         NOT NULL                                   DEFAULT 0
 		CONSTRAINT min_age_restriction CHECK ( books.age_restriction >= 0 ),
 	client_id        int REFERENCES clients ( id )
 );
