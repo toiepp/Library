@@ -1,4 +1,4 @@
-package org.mikholskiy.models;
+package org.mikholskiy.domains;
 
 import org.hibernate.annotations.Cascade;
 

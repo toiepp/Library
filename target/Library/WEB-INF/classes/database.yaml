@@ -1,0 +1,8 @@
+jdbc.url: jdbc:postgresql://localhost:5432/librarydb
+jdbc.username: mikholskiy
+jdbc.password: spflmk7q
+jdbc.driverClassName: org.postgresql.Driver
+
+hibernate.dialect: org.hibernate.dialect.PostgreSQL10Dialect
+hibernate.show_sql: true
+hibernate.format_sql: true
